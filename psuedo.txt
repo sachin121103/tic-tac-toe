@@ -1,0 +1,53 @@
+Pseudocode
+
+Greet the players and create a new game with two players (Display empty board)
+For creating two players, ask for player 1's name and player 2's name. Use these names throughout.
+
+Player One is ALWAYS X while player two is ALWAYS O
+
+1st turn is player 1, who puts the X in ONE square
+2nd turn is player 2, who puts the O in ONE square
+Two players cannot fill the same square
+
+Cycle continues until one player has a winning combination or they draw
+
+Winning combinations are: Top row, bottom row, middle row, left column, right column, middle column, diagonal left to right
+and diagonal right to left.
+
+If there are no winning combinations, the two players draw.
+
+Create 3 classes, the Board class, the Game class and the Player class.
+
+
+Player Class
+
+Methods: 
+
+1. Initialize - Initialize the marker type for each player
+
+2. Get the coordinates of the marker. Should be a loop. Break the loop if the coordinates exist and coordinates are empty.
+     Display an error message if 
+     a) the coordinates are not of valid format
+     b) the coordinates do not exist
+     c) the coordinates already have a marker
+
+Board Class
+
+Methods:
+
+1. Initialize the board as a data structure
+
+2. Render the board
+
+3. Visually place the piece onto the board on the co-ordinates if valid. Display error messages if the coordinates are 
+either invalid or are taken
+
+4. Check for a winning combination. Winning combinations are: 
+
+    a) Top row, bottom row, middle row, 
+    b) Left column, right column, middle column, 
+    c) Diagonal left to right and diagonal right to left.
+
+5. Check for a full board (for a draw). This is if every single row is taken.
+
+
